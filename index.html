@@ -11,19 +11,18 @@
 		<h1>Página web para buscar la capital de tu país</h1>
 	</header>
 	<main>
-		<section>
-			<label for="">
-				<input type="text" />
-				<input type="text" />
+		<section class="searcher__section">
+			<label for="search">
+				<input type="text" class="searcher__section--input" id="search" placeholder="Busca la capital de tu país"/>
+				<input type="submit" class="searcher__section--button" name="search" id="getElements" onclick="setNameCountry()"/>
 			</label>
 		</section>
-		<section>
-			<h2></h2>
-			<p></p>
+		<section class="results__section">
+			<h2 id="search-result-text"></h2>
 		</section>
-		<section>
+		<section class="imagen__section">
 			<figure>
-				<img src="" alt="" />
+				<img src="" id="img" alt="bandera del pais consultado" />
 			</figure>
 		</section>
 	</main>
