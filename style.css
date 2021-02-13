@@ -101,3 +101,15 @@ header {
 		font-size: 3.5rem;
 	}
 }
+
+@media (max-width: 900px) {
+	header h1 {
+		font-size: 3.5rem;
+	}
+	.searcher__section--input {
+		font-size: 3.5rem;
+	}
+	.results__section p {
+		font-size: 3rem;
+	}
+}
