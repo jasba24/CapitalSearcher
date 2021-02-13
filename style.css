@@ -38,11 +38,12 @@ header {
 
 .searcher__section--input {
 	width: 100%;
-	padding: 40px 0;
+	padding: 25px 0;
 	text-align: center;
-	font-size: 4rem;
-	color: #13dafb;
+	font-size: 5rem;
+	color: rgba(0, 208, 255, .8);
 	font-weight: bold;
+	font-family: monospace;
 	outline: none;
 }
 
@@ -50,8 +51,41 @@ header {
 	margin-top: 10px;
 	width: 100px;
 	height: 35px;
-	border: 2px solid rgba(19, 218, 251, .8);
+	border: 2px solid rgba(0, 208, 255, .8);
 	background-color: #ffffff;
-	box-shadow: 0px 0px black;
 	text-transform: uppercase;
+}
+
+.results__section {
+	width: 70%;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	font-size: 4rem;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.results__section h2 {
+	text-transform: uppercase;
+	font-size: 5rem;
+	margin-bottom: 20px;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.imagen__section {
+	width: 500px;
+	height: 600px;
+	display: none;
+}
+
+.imagen__section figure {
+	width: 100%;
+	height: 100%;
+}
+
+.imagen__section figure img {
+	width: 100%;
+	height: 100%;
 }
