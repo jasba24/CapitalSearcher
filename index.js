@@ -1,4 +1,5 @@
 let titleResultsText = document.getElementById("search-result-text")
+let imagenSection = document.querySelector(".imagen__section")
 let imagen = document.getElementById("img")
 
 
@@ -13,9 +14,9 @@ const setNameCountry = () => {
 	.then(data => {
 		let capital = data[0].capital
 		let flag = data[0].flag
-		console.log(data)
+		console.log(flag)
 		titleResultsText.innerHTML = `La capital de ${countryResults} es ${capital}`
 		imagen.setAttribute("src", `${flag}`)
+		imagenSection.classList.add("active")
 	})
 }
-
